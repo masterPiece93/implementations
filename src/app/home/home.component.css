@@ -1,0 +1,14 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    /* position: absolute; */
+    z-index: 1;
+    background: blueviolet;
+    width: 100%;
+    color: white;
+    text-align: center;
+    height: 12%;
+}

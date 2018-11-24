@@ -1,0 +1,9 @@
+.gridHeader {
+    display: flex;
+    justify-content: space-around;
+}
+.x{
+    float: right;
+    margin-top: 4px;
+    cursor: pointer;
+}

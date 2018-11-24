@@ -1,0 +1,19 @@
+<table class="table header-fixed table-hover table-striped table-bordered table-responsive">
+    <thead>
+        <tr>
+            <th scope="col" *ngFor="let c of columns;let i=index">
+                {{c.headerName}}
+
+                <input type="text" (input)="filterData()" [(ngModel)]="search[c.headerName]">
+                <span class="x" id="headerId_{{i}}" (click)="sortGrid($event)">&#10514;</span>
+            </th>
+        </tr>
+    </thead>
+    <tbody [style.height.px]="height">
+        <tr *ngFor="let row of rowData | sort: fields direction">
+            <td *ngFor="let c of columns">
+                {{row[c.headerName]}}
+            </td>
+        </tr>
+    </tbody>
+</table>
